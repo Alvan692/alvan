@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return false">
+        <label for="">masukkan sisi</label>
+        <input type="number" id="sisi">
+        <label for="">masukkan sisi</label>
+        <input type="number" id="sisi2">
+        <label for="">masukkan sisi</label>
+        <input type="number" id="sisi3">
+        <label for="">masukkan sisi</label>
+        <input type="number" id="sisi4">
+        <button onclick="hitungluas()">Hitung Luas dan keliling</button>
+    </form>
+    <div id="hasil"></div>
+    <script>
+        function hitungluas() {
+            let sisi = document.getElementById('sisi').value
+            let sisi2 = document.getElementById('sisi2').value
+            let sisi3 = document.getElementById('sisi3').value
+            let sisi4 = document.getElementById('sisi4').value
+            let hasil = sisi * sisi 
+            document.getElementById('hasil').innerHTML = "luas persegi = " + hasil
+            let hasil2 = sisi + sisi + sisi + sisi
+
+        }
+    </script>
+</body>
+</html>
